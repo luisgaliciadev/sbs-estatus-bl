@@ -1,0 +1,196 @@
+/*
+Menu Administracion Acordeon
+Por German Ferrari
+*/
+
+/* Reseteo */
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote,
+pre, form, fieldset, table, th, tr, td {margin:0; padding:0;}
+img {border:0;}
+a {text-decoration:none;}
+ol, ul {list-style:none;}
+
+/* Elementos basicos */
+
+body {
+	background:#eff4f4;
+	color:#333;
+	font-family:"Lucida Grande", Arial, Verdana;
+	font-size:12px;
+	}
+a {color:#333;}
+p {margin-bottom:20px;}
+	
+/* Plantilla Basica */
+
+#pagina {
+	width:992px;
+	margin:0px auto;
+	overflow:hidden;
+	height:1%;
+	background:#FFF url(images/bg-pagina.gif) repeat-y;	
+	border:1px solid #E7E7E7;
+	}
+	#menu, #contenido {
+		float:left;
+		display:inline;
+		}
+		#menu {
+			width:300px;
+			margin-bottom:20px;
+			border-right:1px solid #E7E7E7;
+			}
+		#contenido {
+			width:609px;
+			padding:20px 25px;
+			}
+	
+	/* Contenido de #menu */	
+	
+	#menu h3 {
+		font-family:"Myriad Pro", Verdana, Arial;
+		font-size:25px;
+		font-style:italic;
+		font-weight:bold;
+		padding:10px 20px;
+		letter-spacing:-1px;
+		color:#FFFFFF;
+		background:#990000;
+		text-shadow:#000 0px -2px 0px;
+		}
+	#menu p {color:#666; padding:0px 20px; line-height:150%;}
+	#menu p a {color:#47595F; border-bottom:1px dotted #FFF;}
+	#menu p a:hover {color:#111; border-bottom:1px dotted #333;}
+		
+	#menu ul {
+		margin-bottom:20px;
+		}
+	#menu ul li {
+		font-family:"Lucida Grande", Verdana, Arial;
+		display:inline;
+		cursor:pointer;
+		}	
+	#menu ul li span {
+		padding:0px;
+		display:block;
+		background:#ebf1f1 url(images/nav.gif) repeat-x 0 0;
+		border-bottom:1px solid #E7E7E7;
+		border-top:1px solid #FFF;
+		font-size:10px;
+		}	
+	#menu ul li span a {
+		font-family:Arial;
+		font-weight:bold;
+		font-size:18px;
+		letter-spacing:-1px;
+		background-position:15px 12px;
+		background-repeat:no-repeat;
+		color:#a0a9a9;		
+		text-shadow:#FFF 0px 1px 0px;
+		padding:15px 10px 15px 60px;
+		display:block;			
+		}
+		#menu ul li span a:hover {
+			color:#7b8585;
+			}
+		#menu ul li span.open a {
+			color:#333;
+			}
+	#menu a {
+		outline:none;
+		}
+			
+	#menu ul li span a#link-posts {
+		background-image:url(images/page_text_32.png);					
+		}
+	#menu ul li span a#link-categorias {
+		background-image:url(images/folder_32.png);					
+		}
+	#menu ul li span a#link-multimedia {
+		background-image:url(images/camera_32.png);					
+		}
+	#menu ul li span a#link-usuarios {
+		background-image:url(images/users_32.png);					
+		}
+	#menu ul li span a#link-opciones {
+		background-image:url(images/tools_32.png);					
+		}
+		
+	#menu ul li ul{
+		margin-bottom:0px;
+		}	
+	#menu ul li ul li {
+		display:inline;
+		font-weight:normal;
+		font-size:11px;
+		}
+		#menu ul li ul li a {
+			display:block;
+			color:#444;
+			padding:11px 10px 11px 60px;
+			background-position:25px 11px;
+			background-repeat:no-repeat;
+			background-color:#f1f5f5;
+			border-bottom:1px solid #E7E7E7;
+			border-top:1px solid #FFF;
+			}
+		#menu ul li ul li a:hover {
+			color:#000;
+			}
+		
+		#menu ul li ul li a.add {
+			background-image:url(images/add_16.png);
+			}
+		#menu ul li ul li a.list {
+			background-image:url(images/arrow_right_16.png);
+			}
+		#menu ul li ul li a.bullet {
+			background-image:url(images/bullet_blue.png);
+			}
+	
+	/* Contenido de #contenido */			
+		
+		#contenido h2 {
+			font-family:"Myriad Pro", Verdana, Arial;
+			font-size:50px;
+			letter-spacing:-3px;
+			font-weight:bold;
+			color:#555;
+			margin-bottom:20px;
+			padding-bottom:10px;
+			border-bottom:5px solid #ebf1f1;
+			}
+		#contenido p {
+			font-size:14px;
+			}
+			
+		#tabla{
+		padding:3px;
+		border:5px 5px 5px 5px;
+		border-style:solid;
+		border-width:thin;
+		position:relative;
+		float:left;
+		font-style:normal;
+		font-variant:normal;
+		font-size:12px;
+		background:#f1f5f5;
+		margin: 3px 5px 3px 5px;
+		overflow:auto;
+		}
+	#head {
+	width:992px;
+	margin:0 auto;
+	height:250px;
+	background:url(../images/header.jpg);	
+	border:1px solid #E7E7E7;
+	}	
+#titulo{
+background:#990000;
+margin:1px 1px 1px 1px;
+color:#FFFFFF;
+border-top-right-radius:5px;
+border-bottom-right-radius:5px;
+border-bottom-left-radius:5px;
+border-top-left-radius:5px;
+}

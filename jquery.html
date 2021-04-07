@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+<style type="text/css">
+ul.sidenav {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	list-style: none;
+	border-bottom: 1px solid #3373a9; /*--Bevel Effect--*/
+	border-top: 1px solid #003867; /*--Bevel Effect--*/
+	font-size: 1.2em;
+}
+ul.sidenav li {
+	position: relative; /*--Add a relative positioning--*/
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+ul.sidenav li a{
+	border-top: 1px solid #3373a9; /*--Bevel Effect--*/
+	border-bottom: 1px solid #003867; /*--Bevel Effect--*/
+	padding: 10px 10px 10px 25px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	width: 165px;
+	background: #005094 url(sidenav_li_a.gif) no-repeat 5px 10px;
+	position: relative; /*--Add a relative positioning--*/
+	z-index: 2; /*--z-index allows the popup to tuck underneath the nav--*/
+}
+ul.sidenav li a:hover {
+	background-color: #004c8d;
+	border-top: 1px solid #1a4c76;
+}
+ul.sidenav li div {
+	display: none;
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 225px;
+	font-size: 0.9em;
+	background: url(bubble_top.gif) no-repeat right top;
+}
+ul.sidenav li div p {
+	margin: 7px 0;
+	line-height: 1.6em;
+	padding: 0 5px 10px 30px;
+	background: url(bubble_btm.gif) no-repeat right bottom;
+}
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+	$("ul.sidenav li").hover(function() {
+		$(this).find("div").stop()
+		.animate({left: "210", opacity:1}, "fast")
+		.css("display","block")
+
+	}, function() {
+		$(this).find("div").stop()
+		.animate({left: "0", opacity: 0}, "fast")
+	});
+
+});
+</script>
+
+<body>
+
+
+
+</body>
+</html>

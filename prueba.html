@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+<style type="text/css">
+.show_tooltip{
+    background-color: #E5F4FE;
+    display: none;
+    padding: 5px 10px;
+    border: #5A5959 1px solid;
+    position: absolute;
+    z-index: 9999;
+    color: #0C0C0C;
+    /*margin: 0 0 0 0;
+    top: 0;
+    bottom: 0;*/
+}
+</style>
+<script type="text/javascript">
+$("li a").mouseenter(function(){
+     $(this).prev().fadeIn();
+}).mousemove(function(e) {
+            $('.tooltip').css('bottom', e.pageY - 10);
+            $('.tooltip').css('right', e.pageX + 10);
+        }).mouseout(function(){
+     $(this).prev().fadeOut();
+})
+</script>	
+<body>
+
+<ul>
+    <li>    
+    <div class="show_tooltip">
+        put returns between paragraphs
+    </div>
+        <a href="#">about</a>
+    </li>
+    <br>
+    <li>    
+    <div class="show_tooltip">
+        for linebreak add 2 spaces at end
+    </div>
+        <a href="#">how</a>
+    </li>
+</ul>
+
+
+</body>
+</html>
